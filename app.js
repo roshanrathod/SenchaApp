@@ -46,6 +46,8 @@ Ext.application({
         // Initialize the main view
         Ext.Viewport.add(Ext.create('FirstApp.view.Main'));
     },
+	
+	
 
     onUpdated: function() {
         Ext.Msg.confirm(

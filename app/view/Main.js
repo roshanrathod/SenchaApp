@@ -15,34 +15,27 @@ Ext.define('FirstApp.view.Main', {
             title: 'Form',
 			items: [
                 {
+					
                     xtype: 'selectfield',
                     label: 'Choose one',
 					autoSelect: false,
                     placeHolder: 'Select a value',
-                    options: [
+					options: [
                         {text: 'First Option',  value: 'first'},
                         {text: 'Second Option', value: 'second'},
                         {text: 'Third Option',  value: 'third'}						
                     ]
                 },
 				{
-                xtype: 'textfield',
-                placeHolder: 'Enter your username',
-                name: 'username',
-                label: 'Username'
-                }, 
-				{
-                xtype: 'passwordfield',
-                placeHolder: 'Enter your password',
-                name: 'password',
-                label: 'Password'
-                }, 
-				{
-                xtype: 'button',
-                name: 'login',
-                text: 'Login',
-                cls: 'login-btn'
-                }
+					xtype: 'datepickerfield',
+					 label: 'Select Date',
+                    value: new Date(),
+                     picker: {
+                    yearFrom: 2015,
+                    yearTo: 2030
+					
+					 }
+			    }
 	        ]
         },
 		{
@@ -84,3 +77,5 @@ Ext.define('FirstApp.view.Main', {
         ]
     }
 });
+
+
